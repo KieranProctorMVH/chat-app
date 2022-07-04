@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import ChatMessage from './ChatMessage.vue';
+import ChatMessage from '@/Pages/Chats/Partials/ChatMessage.vue';
 
 defineProps({
     chat: Object

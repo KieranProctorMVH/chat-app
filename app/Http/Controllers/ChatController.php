@@ -16,6 +16,8 @@ class ChatController extends Controller
      */
     public function index()
     {
+        dd(auth()->user()->chats);
+
         return Inertia::render('Chats/Index', ['chats' => auth()->user()->chats]);
     }
 

@@ -15,7 +15,7 @@
                     </div>
                 </div>
 
-                <ChatList />
+                <ChatList :chats="chats" />
             </div>
             <div class="hidden lg:col-span-2 lg:block">
                 <div class="w-full">
@@ -32,10 +32,10 @@
 
 <script setup>
 import { ref } from 'vue';
-import ChatList from './Partials/ChatList.vue';
-import ChatArea from './Partials/ChatArea.vue';
-import ChatBar from './Partials/ChatBar.vue';
-import ChatMembers from './Partials/ChatMembers.vue';
+import ChatList from '@/Pages/Chats/Partials/ChatList.vue';
+import ChatArea from '@/Pages/Chats/Partials/ChatArea.vue';
+import ChatBar from '@/Pages/Chats/Partials/ChatBar.vue';
+import ChatMembers from '@/Pages/Chats/Partials/ChatMembers.vue';
 
 defineProps({
     chats: Array
